@@ -1,0 +1,501 @@
+---
+pdf_document: default
+author: "xiaoshuohang"
+date: "`r Sys.Date()`"
+output:
+  html_document: null
+  df_print: paged
+  pdf_document: default
+title: "Week-3: Code-along"
+---
+
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# I. Code to edit and execute
+
+**To be submitted on canvas before attending the tutorial**
+
+
+### Loading packages
+
+```{r, eval=FALSE,echo=TRUE}
+# Load package tidyverse
+
+```
+
+### Assigning values to variables
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Example a.: execute this example
+x <- 'A'
+x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example b and execute it
+x <-"Apple"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example c and execute it
+x<-FALSE
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example d and execute it
+ x <- 5L
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example e and execute it
+x <- 5
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example f and execute it
+ x <-1i
+```
+
+### Checking the type of variables
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Example a.: execute this example
+x <- 'A'
+typeof(x)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example b and execute it
+[1] "character"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example c and execute it
+[1] "logical"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example d and execute it
+[1] "integer"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example e and execute it
+[1] "double"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Complete the code for Example f and execute it
+"complex"c
+```
+
+### Need for data types
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# import the cat-lovers data from the csv file you downloaded from canvas
+cat_lovers<- read_csv("cat-lovers.csv")
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Compute the mean of the number of cats: execute this command
+mean(cat_lovers$number_of_cats)
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Get more information about the mean() command using ? operator
+?mean
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Convert the variable number_of_cats using as.integer()
+mean(as.integer(cat_lovers$number_of_cats))
+[1] NA
+Warning message:
+In mean(as.integer(cat_lovers$number_of_cats)) : NAs introduced by coercion
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Display the elements of the column number_of_cats 
+ cat_lovers$number_of_cats
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Display the elements of the column number_of_cats after converting it using as.numeric()
+as.integer(cat_lovers$number_of_cats)
+ [1]  0  0  1  3  3  2  1  1  0  0  0  0  1  3  3  2  1  1  0  0  1  1  0  0  4  0  0  0  0  0  0
+[32]  0  0  0  0  0  0  0  0  0  0  0  1  3  3  2  1 NA  0  0  1  0  1 NA  1  1  1  0  0  2
+Warning message:
+NAs introduced by coercion 
+```
+
+### Create an empty vector
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Empty vector
+x<-vector()
+# Type of the empty vector
+typeof(x)
+[1] "logical"
+```
+
+### Create vectors of type logical
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+x<-vector("logical",length=5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-logical(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+x<-c(TRUE,FALSE,TRUE,FALSE,TRUE)
+# Display the contents of x
+print(x)
+# Display the type of x
+print(typeof(x))
+```
+
+### Create vectors of type character
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+ x<-vector("character",length=5)
+# Display the contents of x
+
+# Display the type of x
+typeof(x)
+[1] "character"
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-character(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+[1] "character"
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+x<-c('A','b','r','q')
+# Display the contents of x
+
+# Display the type of x
+[1] "character"
+```
+
+### Create vectors of type integer
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+ x<-vector("integer",length=5)
+# Display the contents of x
+
+# Display the type of x
+print(typeof(x))
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-integer(5)
+# Display the contents of x
+print(x)
+# Display the type of x
+
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+ X<-c(1,2,3,4,5)
+# Display the contents of x
+
+# Display the type of x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 4
+x<-seq(from=1,to=5,by=0.1)
+# Display the contents of x
+
+# Display the type of x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 5
+x<-1:5
+# Display the contents of x
+
+# Display the type of x
+```
+
+### Create vectors of type double
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 1
+ x<-vector("double",length=5)
+# Display the contents of x
+
+# Display the type of x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 2
+x<-double(5)
+# Display the contents of x
+
+# Display the type of x
+```
+
+```{r,warning=TRUE,message=FALSE,eval=FALSE,echo=TRUE}
+# Method 3
+x<-c(1.5,2.0,2.5)
+# Display the contents of x
+
+# Display the type of x
+```
+
+### Implicit coercion
+
+#### Example 1
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x<-vector()
+# Check the type of x
+"logical"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Add a character to the vector
+x<-c(1.8)
+# Check the type of x
+"double"
+```
+
+#### Example 2
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+
+# Check the type of x
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Add a number to the vector
+ x<-c(x,'a')
+# Check the type of x
+"character"
+```
+
+#### Example 3
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+
+# Check the type of x
+
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Add a logical value to the vector
+x<-c(x,TRUE)
+# Check the type of x
+"character"
+```
+
+
+#### Example 4
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+ x<-c(1L)
+# Check the type of x
+ "integer"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Add a number to the vector
+x<-c(x,2)
+# Check the type of x
+[1] "double"
+```
+
+### Explicit coercion
+
+#### Example 1
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x<-c(1L)
+# Check the type of x
+"integer"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Convert the vector to type character
+ x<-as.character(x)
+# Check the type of x
+"character"
+```
+
+#### Example 2
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x<-c('A')
+# Check the type of x
+character
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Convert the vector to type double
+ x<-as.numeric(x)
+# Check the type of x
+"double"
+```
+
+### Accessing elements of the vector
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Create a vector
+x <- c(1,10,9,8,1,3,5)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access one element with index 3
+x[3]
+[1] 9
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements with consecutive indices, 2 to 4: 2,3,4
+x[2:4]
+[1] 10  9  8
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements with non-consecutive indices, 1,3,5
+ x[c(1,3,5)]
+[1] 1 9 1
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements using logical vector
+x[c(TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE)]
+[1] 1 8 5
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Access elements using the conditional operator <
+x[x<9]
+[1] 1 8 1 3 5
+```
+
+### Examining vectors
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Display the length of the vector
+print(length(x))
+# Display the type of the vector
+print(typeof(x))
+# Display the structure of the vector
+print(str(x))
+```
+
+### Lists
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Initialise a named list
+my_pie = list(type="key lime", diameter=7, is.vegetarian=TRUE)
+# display the list
+my_pie
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Print the names of the list
+[1] "type"          "diameter"      "is.vegetarian"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve the element named type
+[1] "key lime"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve a truncated list
+$type
+[1] "key lime"
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Retrieve the element named type
+[1] "key lime"
+```
+
+#### Exploring data-sets
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Install package
+install.packages("openintro")
+# Load the package
+library(openintro)
+# Load package
+library(tidyverse)
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Catch a glimpse of the data-set: see how the rows are stacked one below another
+glimpse(loans_full_schema)
+```
+
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Selecting numeric variables
+loans <- loans_full_schema %>% # <-- pipe operator
+  select(paid_total, term, interest_rate,
+         annual_income,paid_late_fees,debt_to_income)
+# View the columns stacked one below another
+glimpse(loans)
+Rows: 10,000
+Columns: 6
+$ paid_total     <dbl> 1999.330, 499.120, 281.800, 3312.890, 2324.650, 873.130, 2730.510, 1765.84…
+$ term           <dbl> 60, 36, 36, 36, 36, 36, 60, 60, 36, 36, 60, 60, 36, 60, 36, 60, 60, 60, 36…
+$ interest_rate  <dbl> 14.07, 12.61, 17.09, 6.72, 14.07, 6.72, 13.59, 11.99, 13.59, 6.71, 15.04, …
+$ annual_income  <dbl> 90000, 40000, 40000, 30000, 35000, 34000, 35000, 110000, 65000, 30000, 750…
+$ paid_late_fees <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ debt_to_income <dbl> 18.01, 5.04, 21.15, 10.16, 57.96, 6.46, 23.66, 16.19, 36.48, 18.91, 10.45,…
+> 
+```
+
+```{r,warning=TRUE,message=TRUE,eval=FALSE,echo=TRUE}
+# Selecting categoric variables
+loans <- loans_full_schema %>% 
+  select( ) # type the chosen columns as in the lecture slide
+# View the columns stacked one below another
+glimpse(loans)
+Rows: 10,000
+Columns: 4
+$ grade               <fct> C, C, D, A, C, A, C, B, C, A, C, B, C, B, D, D, D, F, E, C, A, B, C, …
+$ state               <fct> NJ, HI, WI, PA, CA, KY, MI, AZ, NV, IL, IL, FL, SC, CO, FL, TN, NV, N…
+$ homeownership       <fct> MORTGAGE, RENT, RENT, RENT, RENT, OWN, MORTGAGE, MORTGAGE, MORTGAGE, …
+$ disbursement_method <fct> Cash, Cash, Cash, Cash, Cash, Cash, Cash, Cash, Cash, Cash, Cash, Cas…
+> 
+```

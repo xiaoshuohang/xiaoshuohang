@@ -1,0 +1,17 @@
+---
+title: "week 8 chanllenge"
+author: "shuohang"
+date: "2023-10-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## APP
+
+```{r cars}
+knitr::include_graphics("h2.png")
+knitr::include_graphics("h3.png")
+```

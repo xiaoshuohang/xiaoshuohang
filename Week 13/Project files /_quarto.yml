@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "OceanInsights: Species Diversity & Pollution"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Species Diversity
+      - about.qmd
+      - github.qmd
+      
+
+format:
+  html:
+    theme: Darkly
+    css: 
+    - styles.css
+    toc: true
+
+editor: visual
+

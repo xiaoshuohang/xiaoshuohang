@@ -1,0 +1,13 @@
+name: maps
+title: maps
+username: hahahah
+account: hahahah
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10613049
+bundleId: 7964555
+url: https://hahahah.shinyapps.io/maps/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: world map.R

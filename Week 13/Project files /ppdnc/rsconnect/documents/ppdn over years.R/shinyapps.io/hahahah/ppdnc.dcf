@@ -1,0 +1,12 @@
+name: ppdnc
+title: ppdnc
+username: hahahah
+account: hahahah
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10616830
+bundleId: 7964434
+url: https://hahahah.shinyapps.io/ppdnc/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

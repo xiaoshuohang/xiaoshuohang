@@ -1,0 +1,105 @@
+---
+title: "week 9-12 diary entry"
+author: "shuohang"
+date: "2023-10-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+"Q1:the topic i decide to choose is about the conditions of marine species, this topic is discussed from various perspectives such as the pollution situation, the distinction rates and so on"
+
+"Q2:I have collected several data resoureces on different websites, mostly CSV files, below is one of the datasets i have found."
+
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+<div>
+
+```{r}
+"week 10"
+"The question i am going to answer is What secrets do the depths of the ocean hold about today's marine conditions?"
+"According to research done by the University of Texas at Austin,  “As the growing global population stresses the ability of our society to produce food, water, and shelter, we will continue to look to the oceans to help sustain our basic needs.”
+According to UN,The ocean is one of the main repositories of the world's biodiversity. It constitutes 
+over 90 per cent of the habitable space on the planet and contains some 250,000 known species, with many more remaining to be discovered—at least two thirds of the world's marine species are still unidentified.1
+According to Scientia pakistan,Marine biology is interlinked with other science fields like astronomy, biological oceanography, cellular biology, chemistry, ecology, geology, physical oceanography, and zoology. It helps to study the behaviors and interactions of these living entities."
+"One of the chanllenges i faced is to download the shiny app and a also cleaning the data for now"
+
+"week 11"
+'The variables i am going to plot are latitude, longitude and count of species. This will show a relationship between the depth of the ocean and the marine conditions.'
+ "I want to adapt the shiny and ggplot ro make it interactive. As the user of my website can slide the bar to see the changes and thus have a more obvious observation about the marine conditions."
+
+ 
+  data <- data.frame(
+  Week = c("week 9", "week 7","week 8"),
+  Content = c("tidy data", "ggplot2 package", "Shiny"))
+
+"week 12 diary entry"
+
+"The biggest chanllenge i faced in week 12 with the project is to change the data into a shiny+ ggplot graph. As my data set has 3 variables, longtitude, latitude and species count, it is hard for me to put the datas in a usual ggplot graph that only can show the informations about 2 variables. However, after consulted with prof, i learnt that this can be achieved by installing the hrbrthemes and viridis packages, which will turn one of my data's variable, the species count into a colour distribution map. This is a big takeaway for me form this week. 
+
+Another chanllge i faced earlier this week is that i do not know how to make my published app onto the index.qmd file, and now i have learnt that i need to use html block to carry my code for the app, instead of other formatting."
+
+
+```
+
+</div>
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+<div>
+
+ The theme of my data story is marine conditions which are explored through two categories, marine species and the the current condition of marine pollution. The question originating from this general subject is,\" What are the current marine conditions? considering both species diversity and the marine pollution conditions.\"The final theme slightly deviated from the original theme that I proposed earlier this semester. This is because my understanding of this subject deepened as the project progressed. Thus, I decided to narrow the focus to these two distinct categories. Moreover, I separated the two topics into 2 distinct tabs on the project so that the users could have a more organised and comprehensive exploration of the marine conditions.
+
+\
+
+  
+
+  The questions regarding the theme of my project can be crucial to our society or even to all of humanity worldwide. The topic is significant not only because the ocean takes up 70% of our mother planet(Nora,2023), but more importantly because the conditions of the ocean are closely related to the survival of mankind(UN,n.d.).After numerous research and investigation of datasets, It has become evident that the conditions of the marine species and marine pollution states are the two most crucial aspects for users to understand the complexities of marine conditions.
+
+It is significant for us to know about the marine species' conditions as the populations of many marine species are declining at an unsustainable rate, while the number of endangered species is increasing.(Marinebio,2023). On the other hand, the awareness of marine pollution conditions is also very important as the dumped wastes, especially plastic pollution to the ocean environment will directly threaten human being\'s daily life , by threatening food safety and quality, human health, and contributing to climate change(IUCN,2023).
+
+ 
+
+  In the project,  i have curated numerous datasets.One of them showcases a computer-generated prediction of the natural distribution of marine species within a distance of 50km near the equator. This data contributes to the conditions of marine species near the equator. 
+
+ For the marine pollution part, one dataset I have downloaded showed the percentage of different types of marine waste that is received by the ocean in general. Another similar set of data represents the statistics that what are the different types of wastes that are intentionally discarded from human beings and into different marine ecosystems. Both the two data described the marine pollution conditions and pointed out that plastic is a major marine waste. From these two data inspecting the question from a broader perspective, the project then delves into more specific investigations on plastic pollution in marine ecosystems. Two datasets regarding the increasing trend of plastic production worldwide and each country\'s emitted plastic waste to the ocean per capita are presented in the last part of the project. According to researchers, plastic waste is likely to increase by 3 times in 2040, therefore the last data visualisation also includes a prediction of the emitted plastic pollution per capita in each country in the year 2040. 
+
+\
+
+ The data have given a lot of insight regarding the topic. The data showing marine species count near the equator have revealed that more species are gathered around the northern part of Australia. While the plastic production data have showcased a significant overall increase in plastic production for a long time, it is depicted by an always positive gradient line on the graph.We can also observe from the graph under the \"major waste per country section\" that almost every location\'s top category of waste received is plastic. The top point for each line graph in the app for different locations belongs to the plastic category.
+
+\
+
+  I learned a lot of new concepts through the implementation of the project. For example, I learned how to remove the unwanted columns of a CSV and also how to combine 2 CSV files together by renaming the column names of one of the CSV files. I learnt how to cooperate with the Shiny app website, if the app cannot be published successfully, we can look at the logos part on the website to see which part went wrong. Another thing that is interesting to me is the process of adjusting the colours and background colours of the apps and the website, I am fascinated by the huge variety of colours on Shiny.To improve the appearance of the webpage, i also learnt a bit of HTML language (which is really tough for me, and applied it to the website. Furthermore, I learnt how to utilise the \"Leaflet \" package to make it represent my data.
+
+764 words
+
+\
+\
+
+reference:
+
+Marine Conservation Biology \~ marinebio conservation society. MarineBio Conservation Society. (2023, August 5). <https://www.marinebio.org/conservation/marine-conservation-biology/>
+
+Marine plastic pollution. IUCN. (2023, June 1). <https://www.iucn.org/resources/issues-brief/marine-plastic-pollution>
+
+United Nations. (n.d.). 5 reasons you should care about our ocean. United Nations. <https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean>
+
+Why do we explore the ocean?. Why do we explore the ocean? : Ocean Exploration Facts: NOAA Ocean Exploration. (n.d.). <https://oceanexplorer.noaa.gov/facts/why.html> 
+
+</div>

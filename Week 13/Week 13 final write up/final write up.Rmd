@@ -11,42 +11,45 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+<div>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+ The theme of my data story is marine conditions which are explored through two categories, marine species and the the current condition of marine pollution. The question originating from this general subject is," What are the current marine conditions? considering both species diversity and the marine pollution conditions."The final theme slightly deviated from the original theme that I proposed earlier this semester. This is because my understanding of this subject deepened as the project progressed. Thus, I decided to narrow the focus to these two distinct categories. Moreover, I separated the two topics into 2 distinct tabs on the project so that the users could have a more organised and comprehensive exploration of the marine conditions.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+\
 
-```{r cars}
-" The theme of my data story is marine conditions which are explored through two categories, marine species and the the current condition of marine pollution. The question originating from this general subject is,” What are the current marine conditions? considering both species diversity and the marine pollution conditions.”The final theme slightly deviated from the original theme that I proposed earlier this semester. This is because my understanding of this subject deepened as the project progressed. Thus, I decided to narrow the focus to these two distinct categories. Moreover, I separated the two topics into 2 distinct tabs on the project so that the users could have a more organised and comprehensive exploration of the marine conditions.
+  
 
-  
-  The questions regarding the theme of my project can be crucial to our society or even to all of humanity worldwide. The topic is significant not only because the ocean takes up 70% of our mother planet(Nora,2023), but more importantly because the conditions of the ocean are closely related to the survival of mankind(UN,n.d.).After numerous research and investigation of datasets, It has become evident that the conditions of the marine species and marine pollution states are the two most crucial aspects for users to understand the complexities of marine conditions.
-It is significant for us to know about the marine species' conditions as the populations of many marine species are declining at an unsustainable rate, while the number of endangered species is increasing.(Marinebio,2023). On the other hand, the awareness of marine pollution conditions is also very important as the dumped wastes, especially plastic pollution to the ocean environment will directly threaten human being’s daily life , by threatening food safety and quality, human health, and contributing to climate change(IUCN,2023).
- 
-  In the project,  i have curated numerous datasets.One of them showcases a computer-generated prediction of the natural distribution of marine species within a distance of 50km near the equator. This data contributes to the conditions of marine species near the equator. 
- For the marine pollution part, one dataset I have downloaded showed the percentage of different types of marine waste that is received by the ocean in general. Another similar set of data represents the statistics that what are the different types of wastes that are intentionally discarded from human beings and into different marine ecosystems. Both the two data described the marine pollution conditions and pointed out that plastic is a major marine waste. From these two data inspecting the question from a broader perspective, the project then delves into more specific investigations on plastic pollution in marine ecosystems. Two datasets regarding the increasing trend of plastic production worldwide and each country’s emitted plastic waste to the ocean per capita are presented in the last part of the project. According to researchers, plastic waste is likely to increase by 3 times in 2040, therefore the last data visualisation also includes a prediction of the emitted plastic pollution per capita in each country in the year 2040. 
+  The questions regarding the theme of my project can be crucial to our society or even to all of humanity worldwide. The topic is significant not only because the ocean takes up 70% of our mother planet(Nora,2023), but more importantly because the conditions of the ocean are closely related to the survival of mankind(UN,n.d.).After numerous research and investigation of datasets, It has become evident that the conditions of the marine species and marine pollution states are the two most crucial aspects for users to understand the complexities of marine conditions.
 
- The data have given a lot of insight regarding the topic. The data showing marine species count near the equator have revealed that more species are gathered around the northern part of Australia. While the plastic production data have showcased a significant overall increase in plastic production for a long time, it is depicted by an always positive gradient line on the graph.We can also observe from the graph under the “major waste per country section” that almost every location’s top category of waste received is plastic. The top point for each line graph in the app for different locations belongs to the plastic category.
+It is significant for us to know about the marine species' conditions as the populations of many marine species are declining at an unsustainable rate, while the number of endangered species is increasing.(Marinebio,2023). On the other hand, the awareness of marine pollution conditions is also very important as the dumped wastes, especially plastic pollution to the ocean environment will directly threaten human being's daily life , by threatening food safety and quality, human health, and contributing to climate change(IUCN,2023).
 
-  I learned a lot of new concepts through the implementation of the project. For example, I learned how to remove the unwanted columns of a CSV and also how to combine 2 CSV files together by renaming the column names of one of the CSV files. I learnt how to cooperate with the Shiny app website, if the app cannot be published successfully, we can look at the logos part on the website to see which part went wrong. Another thing that is interesting to me is the process of adjusting the colours and background colours of the apps and the website, I am fascinated by the huge variety of colours on Shiny.To improve the appearance of the webpage, i also learnt a bit of HTML language (which is really tough for me, and applied it to the website. Furthermore, I learnt how to utilise the “Leaflet ” package to make it represent my data.
+ 
+
+  In the project,  i have curated numerous datasets.One of them showcases a computer-generated prediction of the natural distribution of marine species within a distance of 50km near the equator. This data contributes to the conditions of marine species near the equator. 
+
+ For the marine pollution part, one dataset I have downloaded showed the percentage of different types of marine waste that is received by the ocean in general. Another similar set of data represents the statistics that what are the different types of wastes that are intentionally discarded from human beings and into different marine ecosystems. Both the two data described the marine pollution conditions and pointed out that plastic is a major marine waste. From these two data inspecting the question from a broader perspective, the project then delves into more specific investigations on plastic pollution in marine ecosystems. Two datasets regarding the increasing trend of plastic production worldwide and each country's emitted plastic waste to the ocean per capita are presented in the last part of the project. According to researchers, plastic waste is likely to increase by 3 times in 2040, therefore the last data visualisation also includes a prediction of the emitted plastic pollution per capita in each country in the year 2040. 
+
+\
+
+ The data have given a lot of insight regarding the topic. The data showing marine species count near the equator have revealed that more species are gathered around the northern part of Australia. While the plastic production data have showcased a significant overall increase in plastic production for a long time, it is depicted by an always positive gradient line on the graph.We can also observe from the graph under the "major waste per country section" that almost every location's top category of waste received is plastic. The top point for each line graph in the app for different locations belongs to the plastic category.
+
+\
+
+  I learned a lot of new concepts through the implementation of the project. For example, I learned how to remove the unwanted columns of a CSV and also how to combine 2 CSV files together by renaming the column names of one of the CSV files. I learnt how to cooperate with the Shiny app website, if the app cannot be published successfully, we can look at the logos part on the website to see which part went wrong. Another thing that is interesting to me is the process of adjusting the colours and background colours of the apps and the website, I am fascinated by the huge variety of colours on Shiny.To improve the appearance of the webpage, i also learnt a bit of HTML language (which is really tough for me, and applied it to the website. Furthermore, I learnt how to utilise the "Leaflet" package to make it represent my data.
+
 764 words
 
+\
+\
 
 reference:
-Marine Conservation Biology ~ marinebio conservation society. MarineBio Conservation Society. (2023, August 5). https://www.marinebio.org/conservation/marine-conservation-biology/
-Marine plastic pollution. IUCN. (2023, June 1). https://www.iucn.org/resources/issues-brief/marine-plastic-pollution
-United Nations. (n.d.). 5 reasons you should care about our ocean. United Nations. https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean
-Why do we explore the ocean?. Why do we explore the ocean?: Ocean Exploration Facts: NOAA Ocean Exploration. (n.d.). https://oceanexplorer.noaa.gov/facts/why.html 
-"
-```
 
-## Including Plots
+Marine Conservation Biology \~ marinebio conservation society. MarineBio Conservation Society. (2023, August 5). <https://www.marinebio.org/conservation/marine-conservation-biology/>
 
-You can also embed plots, for example:
+Marine plastic pollution. IUCN. (2023, June 1). <https://www.iucn.org/resources/issues-brief/marine-plastic-pollution>
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+United Nations. (n.d.). 5 reasons you should care about our ocean. United Nations. <https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean>
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Why do we explore the ocean?. Why do we explore the ocean? : Ocean Exploration Facts: NOAA Ocean Exploration. (n.d.). <https://oceanexplorer.noaa.gov/facts/why.html> 
+
+</div>
